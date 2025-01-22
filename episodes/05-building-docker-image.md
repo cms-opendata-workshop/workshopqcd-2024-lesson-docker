@@ -365,11 +365,11 @@ Check if you can make sense of more complex Dockerfiles bases on what you learnt
 
 ### Explore Dockerfiles 
 
-Explore the various [hepforge](https://rivet.hepforge.org/) Dockerfiles. You can find them under the MC generator specific directories in the [Rivet source code repository](https://gitlab.com/hepcedar/rivet/-/tree/release-4-0-x/docker?ref_type=heads).
+Explore the various [hepforge](https://rivet.hepforge.org/) Dockerfiles. You can find them under the MC generator-specific directories in the [HEPStore code repository](https://gitlab.com/hepcedar/hepstore/-/tree/main).
 
 :::::::::::::::: solution
 
-You can start from the [rivet-pythia image Dockerfile](https://gitlab.com/hepcedar/rivet/-/blob/release-4-0-x/docker/rivet-pythia/Dockerfile?ref_type=heads).
+You can start from the [rivet-pythia image Dockerfile](https://gitlab.com/hepcedar/hepstore/-/blob/main/rivet-pythia/Dockerfile).
 
 Find the familiar instructions `FROM`, `RUN`, `COPY`and `WORKDIR`.
 
@@ -379,7 +379,7 @@ Observe how the image is built `FROM` an existing image
 FROM hepstore/rivet:${RIVET_VERSION}
 ```
 
-Find the Dockerfile for that base image: [rivet Dockerfile](https://gitlab.com/hepcedar/rivet/-/blob/release-4-0-x/docker/rivet/Dockerfile?ref_type=heads).
+Find the Dockerfile for that base image: [rivet Dockerfile](https://gitlab.com/hepcedar/hepstore/-/blob/main/rivet/Dockerfile).
 
 See how it is built `FROM` another base image 
 
@@ -387,7 +387,7 @@ See how it is built `FROM` another base image
 FROM hepstore/hepbase-${ARCH}-latex
 ```
 
-and explore a [hepbase Dockerfile](https://gitlab.com/hepcedar/rivet/-/blob/release-4-0-x/docker/hepbase/Dockerfile.ubuntu?ref_type=heads).
+and explore a [hepbase Dockerfile](https://gitlab.com/hepcedar/hepstore/-/blob/main/hepbase-latex/Dockerfile.ubuntu).
 
 
 
