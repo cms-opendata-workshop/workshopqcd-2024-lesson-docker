@@ -323,7 +323,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Building your own docker image</h1>
-        <p>Last updated on 2024-07-04 |
+        <p>Last updated on 2025-01-22 |
 
         <a href="https://github.com/cms-opendata-workshop/workshopqcd-2024-lesson-docker/edit/main/episodes/05-building-docker-image.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -782,8 +782,8 @@ you learnt from our simple case.</p>
 <h3 class="callout-title">Explore Dockerfiles</h3>
 <div class="callout-content">
 <p>Explore the various <a href="https://rivet.hepforge.org/" class="external-link">hepforge</a> Dockerfiles. You can
-find them under the MC generator specific directories in the <a href="https://gitlab.com/hepcedar/rivet/-/tree/release-4-0-x/docker?ref_type=heads" class="external-link">Rivet
-source code repository</a>.</p>
+find them under the MC generator-specific directories in the <a href="https://gitlab.com/hepcedar/hepstore/-/tree/main" class="external-link">HEPStore code
+repository</a>.</p>
 </div>
 </div>
 </div>
@@ -794,18 +794,18 @@ source code repository</a>.</p>
 </button>
 <div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
-<p>You can start from the <a href="https://gitlab.com/hepcedar/rivet/-/blob/release-4-0-x/docker/rivet-pythia/Dockerfile?ref_type=heads" class="external-link">rivet-pythia
+<p>You can start from the <a href="https://gitlab.com/hepcedar/hepstore/-/blob/main/rivet-pythia/Dockerfile" class="external-link">rivet-pythia
 image Dockerfile</a>.</p>
 <p>Find the familiar instructions <code>FROM</code>, <code>RUN</code>,
 <code>COPY</code>and <code>WORKDIR</code>.</p>
 <p>Observe how the image is built <code>FROM</code> an existing
 image</p>
 <pre><code>FROM hepstore/rivet:${RIVET_VERSION}</code></pre>
-<p>Find the Dockerfile for that base image: <a href="https://gitlab.com/hepcedar/rivet/-/blob/release-4-0-x/docker/rivet/Dockerfile?ref_type=heads" class="external-link">rivet
+<p>Find the Dockerfile for that base image: <a href="https://gitlab.com/hepcedar/hepstore/-/blob/main/rivet/Dockerfile" class="external-link">rivet
 Dockerfile</a>.</p>
 <p>See how it is built <code>FROM</code> another base image</p>
 <pre><code>FROM hepstore/hepbase-${ARCH}-latex</code></pre>
-<p>and explore a <a href="https://gitlab.com/hepcedar/rivet/-/blob/release-4-0-x/docker/hepbase/Dockerfile.ubuntu?ref_type=heads" class="external-link">hepbase
+<p>and explore a <a href="https://gitlab.com/hepcedar/hepstore/-/blob/main/hepbase-latex/Dockerfile.ubuntu" class="external-link">hepbase
 Dockerfile</a>.</p>
 </div>
 </div>
@@ -1038,9 +1038,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://cms-opendata-workshop.github.io/workshopqcd-2024-lesson-docker/instructor/05-building-docker-image.html",
   "identifier": "https://cms-opendata-workshop.github.io/workshopqcd-2024-lesson-docker/instructor/05-building-docker-image.html",
-  "dateCreated": "2024-10-22",
-  "dateModified": "2024-07-04",
-  "datePublished": "2025-01-21"
+  "dateCreated": "2025-01-22",
+  "dateModified": "2025-01-22",
+  "datePublished": "2025-01-22"
 }
 
   </script><script>
